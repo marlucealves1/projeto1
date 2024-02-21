@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+img{
+    width: 350px;
+}
+img:hover{
+animation-duration: 1s;
+animation-name: shake;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+cursor: pointer;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(-5);
+        transform: translateY(-5);
+    }
+    25%{
+        transform: translateX(10);
+        transform: translateY(5);
+    }
+    50%{
+        transform: translateX(5);
+        transform: translateY(5);
+    }
+    75%{
+        transform: translateX(10);
+        transform: translateY(-5);
+    }
+    100%{
+        transform: translateY(-5);
+        transform: translateY(5);
+    }
+}
